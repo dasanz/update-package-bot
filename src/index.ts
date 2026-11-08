@@ -1,1 +1,5 @@
-console.log('Build Attempt here')
+import { ContextCollector } from './ContextCollector';
+
+const contextCollector = new ContextCollector();
+const context = contextCollector.getCollection();
+console.log(context);

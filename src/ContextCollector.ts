@@ -1,13 +1,17 @@
 export class ContextCollector {
-    constructor() {}
+    constructor() {
+        this.getDependencyUpdates();
+        this.selectDependency();
+        this.collectDocumentation();
+    }
 
-    getDependencyUpdates() {}
+    private getDependencyUpdates() {}
 
-    selectDependency() {}
+    private selectDependency() {}
 
-    collectDocumentation() {}
+    private collectDocumentation() {}
 
-    getCollection() {
+    public getCollection() {
         return {
             libraryName: 'someLibraryName',
             version: '1.0.0',
